@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Sign Up"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_17sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/dialog_bg"
+            android:backgroundTint="@color/Append"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <com.hbb20.CountryCodePicker
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                app:ccp_showFlag="false"
+                app:ccp_contentColor="@color/white"
+                app:ccp_showArrow="true"
+                app:ccp_arrowColor="@color/white"
+                app:ccp_showNameCode="false"
+                app:ccp_textSize="17dp"
+                app:ccp_defaultNameCode="IN"
+                android:id="@+id/country"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+
+                android:background="#000" />
+
+            <EditText
+                android:id="@+id/phoneno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_weight="3"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/white"
+                android:hint="Enter your mobile no"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                />
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/image"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginHorizontal="@dimen/_12sdp"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:background="@drawable/dialog_bg"-->
+<!--            android:backgroundTint="@color/AppStart"-->
+<!--            android:paddingStart="@dimen/_10sdp"-->
+<!--            android:paddingRight="@dimen/_10sdp"-->
+<!--            android:padding="15dp"-->
+<!--            android:visibility="gone"-->
+<!--            android:text="Enter your mobile no"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="14sp" />-->
+
+        <EditText
+            android:id="@+id/tvv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:background="@drawable/dialog_bg"
+            android:backgroundTint="@color/Append"
+            android:elevation="@dimen/_10sdp"
+            android:hint="Enter your password"
+            android:inputType="number"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ivi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_box_main"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="submit"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>
