@@ -51,6 +51,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(1024, 1024);
         setContentView(R.layout.activity_splash);
+        dataa.checkApp(this);
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         Name = preferences.getString("FirstRun", "");
         Log.d("FirstRun",Name);
