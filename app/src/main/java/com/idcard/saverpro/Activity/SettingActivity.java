@@ -73,6 +73,11 @@ public class SettingActivity extends AppCompatActivity {
 
         TextView deviceIdTv = findViewById(R.id.deviceIdTextView);
         TextView currentlyUsedIdTv = findViewById(R.id.currentIdTextView);
+        TextView number = findViewById(R.id.number);
+
+        String numb = Stash.getString(dataa.constan);
+        String[] sep = numb.split("@!");
+        number.setText("+"+sep[0]);
 
 //        deviceIdTv.setText("Copy Your Device ID (" + dataa.getDeviceID() + ")");
         /*currentlyUsedIdTv.setText("Copy Currently Used ID ("
