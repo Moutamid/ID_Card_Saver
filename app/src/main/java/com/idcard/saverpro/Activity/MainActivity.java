@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
 
             iswork = new CustomAdapter(MainActivity.this, str1);
             image2.setLayoutManager(new GridLayoutManager(getApplicationContext(), 3));
-            image2.setHasFixedSize(true);
+            image2.setHasFixedSize(false);
             image2.setAdapter(iswork);
             mBuilder.setView(convertView); // setView
             AlertDialog btn = mBuilder.create();

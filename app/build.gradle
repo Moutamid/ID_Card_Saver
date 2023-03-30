@@ -7,7 +7,9 @@ plugins {
 apply plugin: 'com.google.firebase.crashlytics'
 android {
     compileSdk 33
-
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
     defaultConfig {
         applicationId "com.idcard.saverpro"
         minSdk 23

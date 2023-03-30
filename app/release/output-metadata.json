@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.idcard.saver",
+  "applicationId": "com.idcard.saverpro",
   "variantName": "release",
   "elements": [
     {
@@ -13,7 +13,7 @@
       "attributes": [],
       "versionCode": 2,
       "versionName": "1.2",
-      "outputFile": "app-release.apk"
+      "outputFile": "IdCardWallet-1.2-release.apk"
     }
   ],
   "elementType": "File"

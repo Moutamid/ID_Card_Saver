@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -230,12 +231,12 @@ public class SettingActivity extends AppCompatActivity {
 //            }
         });
         relMore.setOnClickListener(view -> {
-            popUpMore();
-//            try {
-//                startActivity(new Intent("android.intent.action.VIEW", Uri.parse("YOUR_GOOGLE_PLAY_STORE_ACCOUNT_URL")));
-//            } catch (ActivityNotFoundException e) {
-//                e.printStackTrace();
-//            }
+           // popUpMore();
+            try {
+                startActivity(new Intent("android.intent.action.VIEW", Uri.parse("https://play.google.com/store/apps/dev?id=4756135779194388058")));
+            } catch (ActivityNotFoundException e) {
+                e.printStackTrace();
+            }
         });
     }
     public static int SYSTEM_LOCK = 35;
