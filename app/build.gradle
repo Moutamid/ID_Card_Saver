@@ -14,7 +14,7 @@ android {
         targetSdk 33
         versionCode 2
         versionName "1.2"
-
+        setProperty("archivesBaseName", "IdCardWallet-$versionName")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
