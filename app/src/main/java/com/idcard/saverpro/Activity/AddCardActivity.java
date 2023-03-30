@@ -337,7 +337,7 @@ public class AddCardActivity extends AppCompatActivity {
                 ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
                 //here you can choose quality factor in third parameter(ex. i choosen 25)
-                bmp.compress(Bitmap.CompressFormat.JPEG, 25, baos);
+                bmp.compress(Bitmap.CompressFormat.JPEG, 65, baos);
                 byte[] fileInBytes = baos.toByteArray();
 
                 StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("cards");
