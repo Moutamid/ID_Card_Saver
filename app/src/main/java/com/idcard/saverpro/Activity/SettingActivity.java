@@ -77,7 +77,8 @@ public class SettingActivity extends AppCompatActivity {
 
         String numb = Stash.getString(dataa.constan);
         String[] sep = numb.split("@!");
-        number.setText("+"+sep[0]);
+        String[] ss = sep[0].split("-");
+        number.setText("+"+ss[1]);
 
 //        deviceIdTv.setText("Copy Your Device ID (" + dataa.getDeviceID() + ")");
         /*currentlyUsedIdTv.setText("Copy Currently Used ID ("

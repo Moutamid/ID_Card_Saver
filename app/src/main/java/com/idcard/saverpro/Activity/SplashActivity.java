@@ -136,16 +136,14 @@ public class SplashActivity extends AppCompatActivity {
                     });
 
                 } else {
-                    if (isWriteStoragePermissionGranted())
-                    if(!Name.isEmpty())
-                    {
-                        startActivity(new Intent(SplashActivity.this, MainActivity.class));
-                        finish();
+                    if (isWriteStoragePermissionGranted()) {
+                        if (!Name.isEmpty()) {
+                            startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                            finish();
+                        } else {
+                            ShowPhoneDialog();
+                        }
                     }
-                    else {
-                        ShowPhoneDialog();
-                    }
-
                 }
             }
         });
@@ -308,9 +306,15 @@ public boolean isWriteStoragePermissionGranted() {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == 12) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                intent.putExtra("which", "WA");
-                startActivity(intent);
+
+                String che = Stash.getString(dataa.constan, "");
+                if (che.isEmpty()){
+                    ShowPhoneDialog();
+                } else {
+                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                    intent.putExtra("which", "WA");
+                    startActivity(intent);
+                }
 
             } else {
                 showDailog();

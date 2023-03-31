@@ -41,9 +41,11 @@
                 android:gravity="center_vertical"
                 app:ccp_showFlag="false"
                 app:ccp_contentColor="@color/white"
+                app:ccpDialog_textColor="@color/white"
                 app:ccp_showArrow="true"
                 app:ccp_arrowColor="@color/white"
                 app:ccp_showNameCode="false"
+                app:ccpDialog_background="@drawable/dialog_bg"
                 app:ccp_textSize="17dp"
                 app:ccp_defaultNameCode="IN"
                 android:id="@+id/country"/>
