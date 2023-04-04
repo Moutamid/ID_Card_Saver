@@ -150,11 +150,11 @@ public class AddCardActivity extends AppCompatActivity {
                     currentModel.name = b.etName.getText().toString();
                 }
 
-                if (currentModel.img_back.isEmpty()) {
+                if (currentModel.img_back == null) {
                     Toast.makeText(AddCardActivity.this, "Please add back card!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if (currentModel.img_front.isEmpty()) {
+                if (currentModel.img_front == null) {
                     Toast.makeText(AddCardActivity.this, "Please add front card!", Toast.LENGTH_SHORT).show();
                     return;
                 }
